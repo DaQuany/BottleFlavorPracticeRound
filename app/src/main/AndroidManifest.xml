@@ -25,7 +25,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".SubActivity"></activity>
+        <activity android:name=".Settings"></activity>
         <activity android:name=".IntroGod"></activity>
         <activity android:name=".Hospital1"></activity>
     </application>
