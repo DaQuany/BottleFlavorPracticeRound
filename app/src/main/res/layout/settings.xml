@@ -53,14 +53,14 @@
         />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button4"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="back"
+        android:radius = "200dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
         />
-
 
 
 </LinearLayout>
