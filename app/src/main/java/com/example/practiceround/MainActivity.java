@@ -15,17 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button delete = findViewById(R.id.delete);
-        delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                delete.setVisibility(View.GONE);
-            }
-        });
-
         Button Btn2 = findViewById(R.id.Btn2);
         Btn2.setOnClickListener(new View.OnClickListener(){
-
             @Override
             public void onClick(View view){
                 startActivity(new Intent(MainActivity.this, IntroGod.class));
