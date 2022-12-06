@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/cloud"
+        ></ImageView>
 
     <ImageView
         android:layout_marginTop="10sp"
@@ -12,13 +17,15 @@
         android:layout_height="wrap_content"
         android:background="@mipmap/god"></ImageView>
 
-    <TextView
+
+    <Button
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="500dp"
-        android:text="GOD: 깨어났니?"
-        ></TextView>
+        android:text="주인공: 으... 어..."
+        android:id="@+id/text"
+        ></Button>
 
     <Button
         android:layout_width="wrap_content"
@@ -28,5 +35,16 @@
         android:text="skip"
         android:id="@+id/skip"
         ></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="300dp"
+        android:text="settings"
+        android:id="@+id/settings"
+        ></Button>
+
+
 
 </RelativeLayout>

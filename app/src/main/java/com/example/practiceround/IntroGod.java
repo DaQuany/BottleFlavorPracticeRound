@@ -10,6 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class
 IntroGod extends AppCompatActivity {
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +22,13 @@ IntroGod extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(IntroGod.this, Hospital1.class));
+            }
+        });
+
+        findViewById(R.id.settings).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(IntroGod.this, Settings.class));
             }
         });
 
