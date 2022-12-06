@@ -13,9 +13,6 @@
         android:theme="@style/Theme.PracticeRound"
         tools:targetApi="31">
         <activity
-            android:name=".gameScreen"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
