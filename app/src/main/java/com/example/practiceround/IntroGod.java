@@ -8,7 +8,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class IntroGod extends AppCompatActivity {
+public class
+IntroGod extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,5 @@ public class IntroGod extends AppCompatActivity {
                 startActivity(new Intent(IntroGod.this, Hospital1.class));
             }
         });
-
     }
 }

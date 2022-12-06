@@ -29,9 +29,9 @@
             android:name=".MainActivity">
 />
         </activity>
-        <activity android:name=".Settings"></activity>
-        <activity android:name=".IntroGod"></activity>
-        <activity android:name=".Hospital1"></activity>
+        <activity android:name=".Settings" />
+        <activity android:name=".IntroGod" />
+        <activity android:name=".Hospital1" />
     </application>
 
 </manifest>
