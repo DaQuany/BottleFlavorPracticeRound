@@ -21,6 +21,5 @@ IntroGod extends AppCompatActivity {
                 startActivity(new Intent(IntroGod.this, Hospital1.class));
             }
         });
-
     }
 }
