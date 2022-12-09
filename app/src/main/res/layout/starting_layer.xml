@@ -12,7 +12,7 @@
         android:layout_height="fill_parent"
         android:text="touch screen to start"
         android:backgroundTint="#000000"
+        android:textColor="#ffffff"
         android:id="@+id/delete"
-        android:onClick="Click1"
         />
 </LinearLayout>

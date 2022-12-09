@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView logo = (ImageView) findViewById(R.id.logo);
+        ImageView main_background = (ImageView) findViewById(R.id.main_background);
 
         Button Btn2 = findViewById(R.id.Btn2);
         Btn2.setOnClickListener(new View.OnClickListener(){
