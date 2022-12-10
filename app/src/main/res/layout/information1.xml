@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="336dp"
+        android:layout_height="292dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="  Team leader / project manager\n
+(이용환)\n
+ Documentation manager\n
+ (윤석권)\n
+ Graphic designer\n
+ (정현호)\n
+ Game system manager\n
+ (권기석)\n
+ Game flow manager\n
+ (조재목)\n
+ Team manager\n
+ (이명원)"
+
+        android:textSize="13sp" />
+
+</LinearLayout>

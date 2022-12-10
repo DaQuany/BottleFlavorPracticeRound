@@ -1,6 +1,8 @@
 package com.example.practiceround;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
@@ -12,20 +14,19 @@ public class Settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
 
-        val statusText:TextView = findviewById(R.id.staus_text)
-        val seekBar:SeekBar = findviewById(R.id.seekBar)
-
-        SeekBar.SetOnseekBarchangeListener(object:SeekBar.OnSeekBarChangeListener {
-            override fun onprogressChanged(seekBar: SeekBar?, progress:Int, fromUser:Boolean){
-                statusText.text ="${progress}%"
+        findViewById(R.id.information).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Settings.this, Information1.class));
             }
+        });
+        findViewById(R.id.how_to_play).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Settings.this, How_to_play.class));
+            }
+        });
 
-            override fun onStartTrackingTouch(p0:SeekBar ?){}
-
-            override fun onStopTrackingTouch(p0:SeekBar ?){}
-        })
     }
 }
-
-
 

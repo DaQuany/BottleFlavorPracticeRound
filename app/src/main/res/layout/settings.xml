@@ -10,9 +10,10 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="General"
+        android:text="How to play"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
+        android:id="@+id/how_to_play"
         />
 
     <Button
@@ -22,30 +23,15 @@
         android:layout_gravity="center_horizontal"
         />
 
+
+
     <Button
-        android:layout_width="100dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Sound"
+        android:text="Information"
         android:layout_marginTop="30dp"
-        android:background="@mipmap/sound"></ImageView>
-        />
-
-    <TextureView
-        android:id="@+id/status_text"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_above="@+id/SeekBar"
-        android:layout_centerHorizontal="true"
-        android:text="0%"
-        android:textSize="30sp"
-        android:textstyle="bold"/>
-
-    <SeekBar
-        android:id="@+id/SeekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp" />
+        android:id="@+id/information"
+    />
 
 </LinearLayout>
