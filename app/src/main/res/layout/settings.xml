@@ -4,63 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:onClick="goSave"
+    android:orientation="vertical">
 
     <Button
+        android:id="@+id/general"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="General"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
-        />
+        android:onClick="goSave"
+        android:text="General" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        />
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Sound"
         android:layout_marginTop="30dp"
-        />
+        android:text="Sound" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        />
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Vibration"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        />
+        android:text="Vibration" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        />
+        android:layout_gravity="center_horizontal" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="back"
-        android:radius = "200dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
-        />
+        android:radius="200dp"
+        android:text="back" />
 
 
 </LinearLayout>
