@@ -26,7 +26,6 @@ public class Settings extends AppCompatActivity {
                 startActivity(new Intent(Settings.this, How_to_play.class));
             }
         });
-
     }
 }
 

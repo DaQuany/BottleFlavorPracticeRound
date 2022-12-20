@@ -11,9 +11,10 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="General"
+        android:text="How to play"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
+        android:id="@+id/how_to_play"
         />
 
     <Button
@@ -27,7 +28,8 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Sound"
+        android:text="Information"
+        android:id="@+id/information"
         android:layout_marginTop="30dp"
         />
 
