@@ -15,7 +15,9 @@ public class Story {
     public Story(Hospital1 h1){this.h1 = h1;}
 
     public void selectNext(String next){
+        h1.savenumber.setText(next);
         switch (next){
+            case "0": start(); break;
             case "1": text1(); break;
             case "2": text2(); break;
             case "3": text3(); break;
@@ -40,6 +42,9 @@ public class Story {
             case "15" : text15(); break;
             case "16" : text16(); break;
             case "s4" : select4(); break;
+            case "17a" : text17a(); break;
+            case "17b" : text17b(); break;
+            case "17c" : text17c(); break;
 
         }
     }
@@ -255,4 +260,21 @@ public class Story {
         h1.text.setText("그래. 그럼 몸조리 잘하고 난 다른 일 있어서 가봐야겠다.");
         t = "15";
     }
+
+    public void text17b(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("그래. 그럼 몸조리 잘하고 난 다른 일 있어서 가봐야겠다.");
+        t = "15";
+    }
+
+    public void text17c(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("그래. 그럼 몸조리 잘하고 난 다른 일 있어서 가봐야겠다.");
+        t = "15";
+    }
+
 }
