@@ -1,50 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@mipmap/cloud"
-        ></ImageView>
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/cloud" />
 
     <ImageView
-        android:layout_marginTop="10sp"
-        android:layout_marginLeft="50sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@mipmap/god"></ImageView>
-
-
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="500dp"
-        android:text="주인공: 으... 어..."
-        android:id="@+id/text"
-        ></Button>
+        android:id="@+id/character"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:src="@mipmap/god"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="300dp"
-        android:text="skip"
+        android:id="@+id/talking"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_shape"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:onClick="text"
+        android:text="talking"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
         android:id="@+id/skip"
-        ></Button>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="300dp"
-        android:text="settings"
-        android:id="@+id/settings"
-        ></Button>
+        android:text="skip"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="567dp"></Button>
+
+    <Button
+        android:id="@+id/startgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start game"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="567dp"></Button>
 
 
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

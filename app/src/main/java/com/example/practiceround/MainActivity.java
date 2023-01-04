@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button Btn2 = findViewById(R.id.Btn2);
         Btn2.setOnClickListener(new View.OnClickListener(){
-
             @Override
             public void onClick(View view){
                 startActivity(new Intent(MainActivity.this, IntroGod.class));
@@ -38,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Settings.class));
             }
         });
-
     }
 
     public void Click1(View v){

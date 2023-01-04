@@ -25,9 +25,11 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity android:name=".StoryGod" />
         <activity android:name=".Settings" />
         <activity android:name=".IntroGod" />
         <activity android:name=".Hospital1" />
+        <activity android:name=".Story" />
     </application>
 
 </manifest>
