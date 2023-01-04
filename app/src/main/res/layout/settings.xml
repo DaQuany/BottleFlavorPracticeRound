@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,10 +10,9 @@
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="How to play"
+        android:text="General"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
-        android:id="@+id/how_to_play"
         />
 
     <Button
@@ -28,8 +26,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Information"
-        android:id="@+id/information"
+        android:text="Sound"
         android:layout_marginTop="30dp"
         />
 
@@ -37,7 +34,8 @@
         android:id="@+id/button2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        />
 
     <Button
         android:layout_width="300dp"
@@ -63,5 +61,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="70dp"
         />
+
 
 </LinearLayout>

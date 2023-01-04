@@ -15,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button delete = findViewById(R.id.delete);
-        delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                delete.setVisibility(View.GONE);
-            }
-        });
+//        Button delete = findViewById(R.id.delete);
+//        delete.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                delete.setVisibility(View.GONE);
+//            }
+//        });
 
         Button Btn2 = findViewById(R.id.Btn2);
         Btn2.setOnClickListener(new View.OnClickListener(){
@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Settings.class));
             }
         });
-
     }
 
     public void Click1(View v){
-        Toast.makeText( this, "Let's start!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, Hospital1.class);
+        startActivity(intent);
     }
 }
 
