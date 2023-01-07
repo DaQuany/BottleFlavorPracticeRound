@@ -15,6 +15,7 @@ public class Hospital1 extends AppCompatActivity {
     Button choice1, choice2, choice3, choice4;
 
     Story story = new Story(this);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

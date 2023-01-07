@@ -102,7 +102,7 @@ public class StoryGod {
     public void text1(){
         g1.background.setImageResource(R.mipmap.cloud);
         g1.character.setVisibility(View.INVISIBLE);
-        g1.text.setText("주인공 : 으... 어...");
+        g1.text.setText(" : 으... 어...");
         t = "2";
     }
 
