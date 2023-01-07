@@ -12,10 +12,14 @@ public class Story {
     Hospital1 h1;
     String c1, c2, c3, c4, t;
 
+    String st_hart;
+    int int_hart;
+
     public Story(Hospital1 h1){this.h1 = h1;}
 
     public void selectNext(String next){
         h1.savenumber.setText(next);
+
         switch (next){
             case "0": start(); break;
             case "1": text1(); break;
@@ -45,8 +49,13 @@ public class Story {
             case "17a" : text17a(); break;
             case "17b" : text17b(); break;
             case "17c" : text17c(); break;
-
         }
+    }
+
+    public void heart_no(){
+//        System.out.println(h1.hearthere);
+//        System.out.println(h1.heart.toString());
+        System.out.println("왜이러는거야!!!");
     }
 
     public void showButton(){
@@ -65,6 +74,10 @@ public class Story {
         h1.character.setVisibility(View.INVISIBLE);
         h1.text.setText("주인공 : (눈을 뜨면서)(으윽... 여긴...?)");
         noButton();
+        int_hart = 0;
+
+//        h1.heart.getText().toString();
+
         t = "1";
     }
 
@@ -72,36 +85,55 @@ public class Story {
         h1.character.setVisibility(View.VISIBLE);
         h1.character.setImageResource(R.mipmap.nurse2);
         h1.text.setText("간호사 : 환자분!!! 괜찮으세요? 정신이 드시나요?");
+
+        int_hart += 30;
+//        h1.heart.setText(String.valueOf(int_hart));
+
+        heart_no();
         t = "2";
     }
 
     public void text2(){
         h1.character.setVisibility(View.INVISIBLE);
         h1.text.setText("주인공 : 여..여기가 어디죠...?");
+
+        int_hart += 20;
+//        h1.heart.setText(String.valueOf(int_hart));
         t = "3";
     }
 
     public void text3(){
         h1.character.setVisibility(View.VISIBLE);
         h1.text.setText("간호사 : 여긴 병원이예요.");
+
+        int_hart += 50;
+//        h1.heart.setText(String.valueOf(int_hart));
+
         t = "4";
     }
 
     public void text4(){
         h1.character.setVisibility(View.INVISIBLE);
         h1.text.setText("주인공 : 아... 저 번개 맞아서 죽은 거 아니었나요?");
+
+        int_hart += 10;
+//        h1.heart.setText(String.valueOf(int_hart));
         t = "5";
     }
 
     public void text5(){
         h1.character.setVisibility(View.VISIBLE);
         h1.text.setText("간호사 : 무슨 소리예요. 환자분, 기억 안 나세요? 교통사고 당해서 응급실로 실려오셨어요.");
+
+        int_hart += 40;
+//        h1.heart.setText(String.valueOf(int_hart));
         t = "6";
     }
 
     public void text6(){
         h1.character.setVisibility(View.INVISIBLE);
         h1.text.setText("주인공 : (아... 교통사고 난 걸로 처리가 된건가?)");
+
         t = "7";
     }
 
@@ -114,6 +146,7 @@ public class Story {
     public void text8(){
         h1.character.setVisibility(View.INVISIBLE);
         h1.text.setText("주인공 : 아뇨 전 괜찮습니다. 잠시 착각했나보네요.(근데 어디서 많이 본 얼굴인데? 기분탓인가?)");
+
         t = "9";
     }
 
