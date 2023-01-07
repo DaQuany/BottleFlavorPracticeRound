@@ -47,6 +47,7 @@ public class Hospital1 extends AppCompatActivity {
         choice4 = (Button)findViewById(R.id.choice4);
         savebt = (Button)findViewById(R.id.savebt);
         savenumber = (TextView)findViewById(R.id.savenumber);
+        story.start();
 
         if(getIntent().hasExtra("msg")){
             savenumber.setText("0");
