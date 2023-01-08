@@ -21,6 +21,8 @@ public class Hospital1 extends AppCompatActivity {
     private DatabaseHelper db;
     private ArrayList<Hart> hartItem;
     private RecyclerView tv_hart;
+    private Button savebt;
+    static TextView savenumber;
 
     ImageView background;
     ImageView character;
@@ -28,17 +30,10 @@ public class Hospital1 extends AppCompatActivity {
     Button choice1, choice2, choice3, choice4;
     Button home;
 
+
     String scene200;
 
-    static TextView savenumber;
-    TextView ba_hart;
-    TextView go_hart;
-    TextView ge_hart;
-
-    Button savebt;
-
     public static final String SHARED_PREFS = "sharedPrefs";
-    public static final String SHARED_PREFS_hart = "sharedPrefs";
     public static final String SAVE_SCENE = "text";
 
 
@@ -50,43 +45,21 @@ public class Hospital1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hospital1);
 
-        setInit();
-
-        background = (ImageView) findViewById(R.id.background);
-        character = (ImageView) findViewById(R.id.character);
-        text = (Button) findViewById(R.id.talking);
-        db = new DatabaseHelper(this);
-
-        // 조그만 선택형 버튼
-        choice1 = (Button) findViewById(R.id.choice1);
-        choice2 = (Button) findViewById(R.id.choice2);
-        choice3 = (Button) findViewById(R.id.choice3);
-        choice4 = (Button) findViewById(R.id.choice4);
-
-        // 세이브 버튼
-        savebt = (Button) findViewById(R.id.savebt);
-        // 세이브 했을 때 신 넘버
-        savenumber = (TextView) findViewById(R.id.savenumber);
-
-        // 홈으로 돌아가기
-        home = (Button) findViewById(R.id.bt_home);
-
-
+        aboutSave();
+        aboutGame();
 
         savebt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 savenumber.getText().toString();
-
                 saveData();
-
             }
         });
 
         if(getIntent().hasExtra("msg")){
-            go_hart.setText("0");
-            ge_hart.setText("0");
-            ba_hart.setText("0");
+//            go_hart.setText("0");
+//            ge_hart.setText("0");
+//            ba_hart.setText("0");
             savenumber.setText("0");
         }
         else{
@@ -105,15 +78,32 @@ public class Hospital1 extends AppCompatActivity {
         });
     }
 
-    private void setInit() {
+    private void aboutSave() {
         db = new DatabaseHelper(this);
-        // 호감도 지수
-        go_hart = (TextView) findViewById(R.id.tv_go);
-        ge_hart = (TextView) findViewById(R.id.tv_ge);
-        ba_hart = (TextView) findViewById(R.id.tv_ba);
-//        db =
+
+        hartItem = new ArrayList<>();
+
+        // 세이브 버튼
+        savebt = (Button) findViewById(R.id.savebt);
+        // 세이브 했을 때 신 넘버
+        savenumber = (TextView) findViewById(R.id.savenumber);
+
     }
 
+    public void aboutGame(){
+        background = (ImageView) findViewById(R.id.background);
+        character = (ImageView) findViewById(R.id.character);
+        text = (Button) findViewById(R.id.talking);
+
+        // 조그만 선택형 버튼
+        choice1 = (Button) findViewById(R.id.choice1);
+        choice2 = (Button) findViewById(R.id.choice2);
+        choice3 = (Button) findViewById(R.id.choice3);
+        choice4 = (Button) findViewById(R.id.choice4);
+
+        // 홈으로 돌아가기
+        home = (Button) findViewById(R.id.bt_home);
+    }
 
     public void choice1(View view) {
         story.selectNext(story.c1);
@@ -141,7 +131,7 @@ public class Hospital1 extends AppCompatActivity {
     }
 
     public void loadData(){
-        SharedPreferences shared_scene = getSharedPreferences(SHARED_PREFS_hart, MODE_PRIVATE);
+        SharedPreferences shared_scene = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         scene200 = shared_scene.getString(SAVE_SCENE, "");
     }
 }
