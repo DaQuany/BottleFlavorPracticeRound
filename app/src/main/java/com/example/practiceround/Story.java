@@ -572,167 +572,135 @@ public class Story {
                 neighbor254c();
                 break;
             //  n2 42 - 54 abc end
-            //  neighbor 2 end
+        //  neighbor 2 end
 
-            case "s21" :
-                school21();
-                break;
-            case "s22" :
-                school22();
-                break;
-            case "s23" :
-                school23();
-                break;
-            case "s24" :
-                school24();
-                break;
-            case "s25" :
-                school25();
-                break;
-            case "s26" :
-                school26();
-                break;
-            case "s27" :
-                school27();
-                break;
-            case "s28" :
-                school28();
-                break;
-            case "s29" :
-                school29();
-                break;
-            case "s210" :
-                school210();
-                break;
-            case "s211" :
-                school211();
-                break;
-            case "s212" :
-                school212();
-                break;
-            case "s213" :
-                school213();
-                break;
-            case "s214" :
-                school214();
-                break;
-            case "s215" :
-                school215();
-                break;
-            case "s216" :
-                school216();
-                break;
-            case "s217" :
-                school217();
-                break;
-            case "s218" :
-                school218();
-                break;
-            case "s219" :
-                school219();
-                break;
-            case "s220" :
-                school220();
-                break;
-            case "s222" :
-                school222();
-                break;
-            case "s223" :
-                school223();
-                break;
-            case "s224" :
-                school224();
-                break;
-            case "s225" :
-                school225();
-                break;
-            case "s226" :
-                school226();
-                break;
-            case "s227" :
-                school227();
-                break;
-            case "s228" :
-                school228();
-                break;
-            case "s229" :
-                school229();
-                break;
-            case "s230" :
-                school230();
-                break;
-            case "s232" :
-                school232();
-                break;
-            case "s2s1" :
-                school2select1();
-            case "s233as" :
-                school233a();
-                break;
-            case "s233b" :
-                school233b();
-                break;
-            case "s234a" :
-                school234a();
-                break;
-            case "s234b" :
-                school234b();
-                break;
-            case "s2s2" :
-                school2select2();
-                break;
-            case "s235b" :
-                school235b();
-                break;
-            case "s236b" :
-                school236b();
-                break;
-            case "s237d" :
-                school237b();
-                break;
-            case "s238b" :
-                school238b();
-                break;
-            case "s239b" :
-                school239b();
-                break;
-            case "s240b" :
-                school240b();
-                break;
-            case "s241b" :
-                school241b();
-                break;
-            case "s2s3" :
-                school2select3();
-                break;
-            case "s242b" :
-                school242b();
-                break;
-            case "s242c" :
-                school242c();
-                break;
-            case "s242d" :
-                school242d();
-                break;
-            case "s242a" :
-                school242a();
-                break;
-            case "s243a" :
-                school243a();
-                break;
-            case "s244a" :
-                school244a();
-                break;
-            case "s245a" :
-                school245a();
-                break;
-            case "s246a" :
-                school246a();
-                break;
-            case "s247a" :
-                school247a();
-                break;
+        //  school 2
+            case "s21" : school21();break;
+            case "s22" : school22();break;
+            case "s23" : school23();break;
+            case "s24" : school24();break;
+            case "s25" : school25();break;
+            case "s26" : school26();break;
+            case "s27" : school27();break;
+            case "s28" : school28();break;
+            case "s29" : school29();break;
+            case "s210" : school210();break;
+            case "s211" : school211();break;
+            case "s212" : school212();break;
+            case "s213" : school213();break;
+            case "s214" : school214();break;
+            case "s215" : school215();break;
+            case "s216" : school216();break;
+            case "s217" : school217();break;
+            case "s218" : school218();break;
+            case "s219" : school219();break;
+            case "s220" : school220();break;
+            case "s222" : school222();break;
+            case "s223" : school223();break;
+            case "s224" : school224();break;
+            case "s225" : school225();break;
+            case "s226" : school226();break;
+            case "s227" : school227();break;
+            case "s228" : school228();break;
+            case "s229" : school229();break;
+            case "s230" : school230();break;
+            case "s232" : school232(); break;
+            case "s2s1" : school2select1(); break;
+            case "s233as" : school233a(); break;
+            case "s233b" : school233b(); break;
+            case "s234a" : school234a(); break;
+            case "s234b" : school234b(); break;
+            case "s2s2" : school2select2(); break;
+            case "s235b" : school235b(); break;
+            case "s236b" : school236b(); break;
+            case "s237d" : school237b(); break;
+            case "s238b" : school238b(); break;
+            case "s239b" : school239b(); break;
+            case "s240b" : school240b(); break;
+            case "s241b" : school241b(); break;
+            case "s2s3" : school2select3(); break;
+            case "s242b" : school242b(); break;
+            case "s242c" : school242c(); break;
+            case "s242d" : school242d(); break;
+            case "s242a" : school242a(); break;
+            case "s243a" : school243a(); break;
+            case "s244a" : school244a(); break;
+            case "s245a" : school245a(); break;
+            case "s246a" : school246a(); break;
+            case "s247a" : school247a(); break;
+        //  School 2 end
 
+        //  Hospital 3
+            case "h31" : hospital31(); break;
+            case "h32" : hospital32(); break;
+            case "h33" : hospital33(); break;
+            case "h34" : hospital34(); break;
+            case "h3s1" : hospital3select1(); break;
+            case "h35a" : hospital35a(); break;
+            case "h35b" : hospital35b(); break;
+            case "h35c" : hospital35c(); break;
+            case "h36" : hospital36(); break;
+            case "h3s2" : hospital3select2(); break;
+            case "h37a" : hospital37a(); break;
+            case "h37b" : hospital37b(); break;
+            case "h37c" : hospital37c(); break;
+            case "h37d" : hospital37d(); break;
+            case "h38" : hospital38(); break;
+            case "h39" : hospital39(); break;
+            case "h310" : hospital310(); break;
+            case "h311" : hospital311(); break;
+            case "h312" : hospital312(); break;
+            case "h3s3" : hospital3select3(); break;
+            case "h313a" : hospital313a(); break;
+            case "h313b" : hospital313b(); break;
+            case "h313c" : hospital313c(); break;
+            case "h314" : hospital314(); break;
+            case "h315" : hospital315(); break;
+            case "h3s4" : hospital3select4(); break;
+            case "h316a" : hospital316a(); break;
+            case "h316b" : hospital316b(); break;
+            case "h316c" : hospital316c(); break;
+            case "h317" : hospital317(); break;
+            case "h318" : hospital318(); break;
+            case "h3s5" : hospital3select5(); break;
+            case "h319a" : hospital319a(); break;
+            case "h319b" : hospital319b(); break;
+            case "h319c" : hospital319c(); break;
+            case "h320" : hospital320(); break;
+            case "h321" : hospital321(); break;
+            case "h322" : hospital322(); break;
+            case "h323" : hospital323(); break;
+            case "h324" : hospital324(); break;
+            case "h325" : hospital325(); break;
+            case "h3s6" : hospital3select6(); break;
+            case "h326" : hospital326(); break;
+            case "h327" : hospital327(); break;
+            case "h328" : hospital328(); break;
+            case "h329" : hospital329(); break;
+            case "h330" : hospital330(); break;
+            case "h331" : hospital331(); break;
+            case "h3s7" : hospital3select7(); break;
+            case "h332a" : hospital332a(); break;
+            case "h332b" : hospital332b(); break;
+            case "h332c" : hospital332c(); break;
+            case "h333a" : hospital333a(); break;
+            case "h333b" : hospital333b(); break;
+            case "h333c" : hospital333c(); break;
+            case "h334a" : hospital334a(); break;
+            case "h334b" : hospital334b(); break;
+            case "h334c" : hospital334c(); break;
+            case "h335a" : hospital335a(); break;
+            case "h335b" : hospital335b(); break;
+            case "h335c" : hospital335c(); break;
+            case "h336" : hospital336b(); break;
+            case "h3s8" : hospital3select8(); break;
+            case "h337" : hospital337(); break;
+            case "h338" : hospital338(); break;
+            case "h339" : hospital339(); break;
+            case "h340" : hospital340(); break;
+            case "h341" : hospital341(); break;
+            case "h342" : hospital342(); break;
+        //  Hospital 3 end
 
         }
 
@@ -2443,6 +2411,7 @@ public class Story {
         h1.choice4.setText("주인공: (햄스터 소리를 낸다.)");
     }
 
+//  Hospital 3
     public void hospital31() {
         h1.character.setVisibility(View.INVISIBLE);
         h1.text.setVisibility(View.VISIBLE);
@@ -2632,7 +2601,7 @@ public class Story {
     }
 
     public void hospital314() {
-        h1.character.setVisibility(View.VISIBLE);
+        h1.character.setVisibility(View.INVISIBLE);
         h1.text.setVisibility(View.VISIBLE);
         h1.text.setText("주인공: 왜그래...? 괜찮아??");
         t = "h315";
@@ -2663,13 +2632,14 @@ public class Story {
         noButton();
         h1.text.setVisibility(View.VISIBLE);
         h1.text.setText("바닐라: 응... (훌쩍..)");
+        t ="h317";
     }
-
     public void hospital316b(){
         h1.character.setVisibility(View.VISIBLE);
         noButton();
         h1.text.setVisibility(View.VISIBLE);
         h1.text.setText("바닐라: 응... (훌쩍..)");
+        t ="h317";
     }
 
     public void hospital316c(){
@@ -2677,6 +2647,716 @@ public class Story {
         noButton();
         h1.text.setVisibility(View.VISIBLE);
         h1.text.setText("바닐라: 응... (훌쩍..)");
+        t ="h317";
     }
+
+    public void hospital317(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: 근데 어떤 게 힘든거야..?");
+        t ="h318";
+    }
+
+    public void hospital318(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 선배들이 너무 괴롭혀. ㅠㅠ 일도 계속 나만 시키고 몸도 마음도 너무 지친다..");
+        t ="h3s5";
+    }
+
+    public void hospital3select5() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 다 데려와!! 내가 다 혼내줄게!");
+        h1.choice3.setText("주인공: 어쩔 수 없지.. 누나가 참아~");
+        h1.choice4.setText("주인공: 그랬구나~ 힘들었겠다..");
+        c2 = "h319a";
+        c3 = "h319b";
+        c4 = "h319c";
+    }
+
+    public void hospital319a(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 얘기 들어줘서 고마워.");
+        t ="h320";
+    }
+
+    public void hospital319b(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 얘기 들어줘서 고마워.");
+        t ="h320";
+    }
+
+    public void hospital319c(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 얘기 들어줘서 고마워.");
+        t ="h320";
+    }
+
+    public void hospital320(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : (별로 들어 준 것도 없는데 뭐지) 아... 응..");
+        t ="h321";
+    }
+
+    public void hospital321(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 우리 먹고 뭐할까? 영화볼래? 같이 게임하러갈까?");
+        t ="h322";
+    }
+
+    public void hospital322(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 음... 역시 국밥먹고 난 후에는 소화를 시켜야지~ 산책하자!");
+        t ="h323";
+    }
+
+    public void hospital323(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공:(왜 물어본거야 그럼..)그래, 그러자!");
+        t ="h324";
+    }
+
+    public void hospital324(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공과 바닐라가 식사를 마치고 나온다.)");
+        t ="h324";
+    }
+
+    public void hospital325(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 우리 산책하러 어디로 갈까?");
+        t ="h3s6";
+    }
+
+    public void hospital3select6() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("강가");
+        h1.choice3.setText("공원");
+        h1.choice4.setText("골목길");
+        c2 = "h326";
+        c3 = "h326";
+        c4 = "h326";
+    }
+
+    public void hospital326(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 그래! 거기로 가자!");
+        t ="h327";
+    }
+
+    public void hospital327(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: ... ... ...");
+        t ="h328";
+    }
+
+    public void hospital328(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: ... ... ...");
+        t ="h329";
+    }
+
+    public void hospital329(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : (여자랑 단둘이 있는게 얼마만이냐... 뭐라고 해야할지 모르겠네... 어색하다.)");
+        t ="h330";
+    }
+
+    public void hospital330(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("(바닐라는 앞만 보고 걸어간다.)");
+        t ="h331";
+    }
+
+    public void hospital331(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : (질문은 해야겠고... 뭐라고 물어보지..?)");
+        t ="h3s7";
+    }
+
+    public void hospital3select7() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 누난 보통 주말에 뭐하면서 쉬어?");
+        h1.choice3.setText("주인공: 누나 이상형이 뭐야?");
+        h1.choice4.setText("주인공: 누나 혹시 애니 좋아해?");
+        c2 = "h332a";
+        c3 = "h332b";
+        c4 = "h332c";
+    }
+
+    public void hospital332a(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 보통은 책 읽거나 영화 자주 봐! 너는?");
+        t ="h333a";
+    }
+
+    public void hospital333a(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 오! 나두 그래!! 나도 책이랑 영화 자주 봐ㅎㅎ");
+        t ="h334a";
+    }
+
+    public void hospital334a(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 정말? 우리 그럼 다음에 영화 같이 볼까?");
+        t ="h335a";
+    }
+
+    public void hospital335a(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 좋아! 그러자!!");
+        t ="h3s8";
+    }
+
+    public void hospital332b(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 음... 나는 키크고 잘생긴 사람??");
+        t ="h333b";
+    }
+
+    public void hospital333b(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: (마음의 상처를 받는다.) ... ... ...");
+        t ="h334b";
+    }
+
+    public void hospital334b(){
+        h1.character.setVisibility(View.VISIBLE);
+
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 근데 그래도 마음씨가 착한 게 제일인 것 같아!");
+        t ="h335b";
+    }
+
+    public void hospital335b(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: (다시 기분이 좋아진다.) 그럼 만약에 키도 작고 못생겼는데 착한 건?");
+        t ="h336b";
+    }
+
+    public void hospital336b(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 그건 좀 생각해 봐야할 것 같은데?ㅎㅎ");
+        t ="h3s8";
+    }
+
+    public void hospital332c(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 아, 너 애니 좋아해??");
+        t ="h320";
+    }
+
+    public void hospital333c(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: 아.. 응 조금..ㅎㅎ)");
+        t ="h334c";
+    }
+
+    public void hospital334c(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 누나는 애니는 딱히 잘 안봐서..ㅎㅎ 잘모르겠네..");
+        t ="h335b";
+    }
+
+    public void hospital335c(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("(두 사람 사이에 어색한 침묵만 흐른다.)");
+        t ="h3s8";
+    }
+
+    public void hospital3select8() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 이제 좀 걸었으니까 디저트 먹을까?");
+        h1.choice3.setText("주인공: 우리 할 것도 없는데 영화보러 갈까?");
+        h1.choice4.setText("주인공: 누나 게임방 혹시 가봤어? 같이 가볼래?");
+        c2 = "h337";
+        c3 = "h337";
+        c4 = "h337";
+    }
+
+    public void hospital337(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 좋아!");
+        t ="h338";
+    }
+
+    public void hospital338(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("뚜루루 뚜루루 (바닐라에게 전화가 걸려온다.)");
+        t ="h339";
+    }
+
+    public void hospital339(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 아..! 병원에서 전화오네.");
+        h1.text.setText("바닐라: 여보세요? 아, 네.. 아!!! 지금 바로 가겠습니다!!");
+        h1.text.setText("바닐라: 인공아 어떡하지..?");
+        h1.text.setText("바닐라: 병원에서 갑자기 간호사가 부족하다고 해서 지금 가봐야할 것 같아..");
+        t ="h340";
+    }
+
+    public void hospital340(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: 아, 급한 일이 우선이지! 얼른 가봐!!");
+        t ="h341";
+    }
+
+    public void hospital341(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 미안해!! 다음에 시간나면 또 보자ㅎㅎ");
+        t ="h342";
+    }
+
+    public void hospital342(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: 으..응..! 조심히 가!");
+    }
+//  Hospital 3 end
+
+//  Hospital 4
+    public void hospital41(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("(우당탕!!)");
+        h1.text.setText("(바닐라가 병원 침대에서 깬다..)");
+        t = "h42";
+    }
+
+    public void hospital4select1() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 누나 괜찮아?? 무슨 일이 있었던거야???");
+        h1.choice3.setText("주인공: 아니, 누나 왜이렇게 약해빠졌어? 이거 무슨 꼴이야..");
+        h1.choice4.setText("주인공: 내가 왔으니 걱정말라구ㅎㅎ");
+        c2 = "h42a";
+        c3 = "h42b";
+        c4 = "h42c";
+    }
+
+    public void hospital42a(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 음... 인공이 왔구나..?");
+        t ="h43";
+    }
+
+    public void hospital42b(){
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 음... 인공이 왔구나..?");
+        t ="h43";
+    }
+
+    public void hospital42c() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 음... 인공이 왔구나..?");
+        t = "h43";
+    }
+
+    public void hospital43(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: 다른 간호사분한테 전화 받자마자 바로 왔어! 어쩌다가 쓰러진거야?");
+        t = "h44";
+    }
+
+    public void hospital44(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 최근에 일을 너무 많이 했나봐.");
+        t = "h45";
+    }
+
+    public void hospital45(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: 일을 얼마나 많이 했길래 이 지경이 났어...");
+        t = "h46";
+    }
+
+    public void hospital46(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 지난 몇일간 잠도 제대로 못자고 연속 근무 뛰고..");
+        h1.text.setText("바닐라: 어제도 일하다가 쓰러졌나봐.. 정신 차려보니까 여기네.");
+        t = "h4s2";
+    }
+
+    public void hospital4select2() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 그게 그렇게 힘들 정도인가..? 나도 군대에서 자주 그렇게 일했는데...");
+        h1.choice3.setText("주인공: 헐 힘들었겠다.. 병원에선 그걸 그대로 계속 일을 시켜?");
+        h1.choice4.setText("주인공: 이제라도 좀 쉬어... 나중에 병원에 한 번 얘기해보자.");
+        c2 = "h48a";
+        c3 = "h48b";
+        c4 = "h48c";
+    }
+
+    public void hospital48a(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: ㅎㅎ.. 그래도 이렇게 와줘서 너무 고마워..");
+        t = "h49";
+    }
+
+    public void hospital48b(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: ㅎㅎ.. 그래도 이렇게 와줘서 너무 고마워..");
+        t = "h49";
+    }
+
+    public void hospital48c(){
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: ㅎㅎ.. 그래도 이렇게 와줘서 너무 고마워..");
+        t = "h49";
+    }
+
+    public void hospital49(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 :  아니야 이 정도는 기본이지! 뭐 좀 먹었어?");
+        t = "h410";
+    }
+
+    public void hospital410() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 아침먹고 아직...");
+        t = "h4s3";
+    }
+
+    public void hospital4select3() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 해가 중천인데 아직도 안먹었어? 밥이라도 좀 잘먹어!");
+        h1.choice3.setText("주인공: 내가 오면서 사과를 챙겨오긴 했는데 이거라도 일단 먹을래?");
+        h1.choice4.setText("주인공: 그렇구나.. ");
+        c2 = "h411a";
+        c3 = "h411b";
+        c4 = "h411c";
+    }
+
+    public void hospital411a() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 그럴까.. 근데 손에 들고 온 건 사과야??");
+        t = "h412";
+    }
+
+    public void hospital411b() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 헐 정말? 고마워! ㅠㅠ");
+        t = "h412";
+    }
+
+    public void hospital411c() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 근데 너 손에 들고 온 건 사과야??");
+        t = "h412";
+    }
+
+    public void hospital412() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 마침 과일이 먹고 싶었는데 잘됐다! 진짜 고마워!");
+        t = "h413";
+    }
+
+    public void hospital413(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 훗, 이정도 쯤이야..ㅎㅎ");
+        h1.text.setText("주인공 : (나도 점점 센스가 늘어가는군 이러다가 진짜 바닐라 누나가 나한테 반하는거 아니야?)");
+        t = "h414";
+    }
+
+    public void hospital414() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 이 사과 정말 맛있다! 어디서 샀어?");
+        t = "h4s4";
+    }
+
+    public void hospital4select4() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 그냥 오다가 주웠어~");
+        h1.choice3.setText("주인공: 누나 마음 속 >_<");
+        h1.choice4.setText("주인공: 이거 문경사과야. 당도가 높은걸로 유명하지.");
+        c2 = "h415a";
+        c3 = "h415b";
+        c4 = "h415c";
+    }
+
+    public void hospital415a() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 아... 그렇구나... 맛있다!!");
+        t = "h416";
+    }
+
+    public void hospital415b() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 아... 그렇구나... 맛있다!!");
+        t = "h416";
+    }
+
+    public void hospital415c() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 아... 그렇구나... 맛있다!!");
+        t = "h416";
+    }
+
+    public void hospital416(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공: (방금 멘트 쩔었다. 나님)");
+        t = "h417";
+    }
+
+    public void hospital417() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라 : 그나저나 진짜 갑작스러웠는데 와줘서 고마워...");
+        t = "h418";
+    }
+
+    public void hospital418(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 아니야... 누나가 아프다는데 당연히 와야지!");
+        t = "h419";
+    }
+
+    public void hospital419() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 내 동료 간호사가 가장 최근에 전화한 사람한테 전화했는데 그게 너였다고 하더라구..");
+        t = "h420";
+    }
+
+    public void hospital420(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 그랬구나.. 뭔가 좀 특별한 기분인걸?ㅎㅎ");
+        t = "h421";
+    }
+
+    public void hospital421() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 지난 주는 바빠서 연락을 너말고는 아무랑도 못했던 것 같아..");
+        t = "h42s5";
+    }
+
+    public void hospital4select5() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 그 바쁜 와중에 나한테 시간을 내준거였어??");
+        h1.choice3.setText("주인공: 아 뭐야.. 다른 이유가 있던 게 아니구나.");
+        h1.choice4.setText("주인공: 부모님한테도 전화하고 좀 그래~ 어!");
+        c2 = "h422a";
+        c3 = "h422b";
+        c4 = "h422c";
+    }
+
+    public void hospital422a() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: ㅎㅎ 그렇게 됐네.");
+        t = "h423";
+    }
+
+    public void hospital422b() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 음.. 그런가? 난 특별하다고 생각했는데..");
+        t = "h423";
+    }
+
+    public void hospital422c() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 아... 응... 그래야지..?");
+        t = "h423";
+    }
+
+    public void hospital423(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 그래서 언제까지 입원해 있는거야?");
+        t = "h424";
+    }
+
+    public void hospital424() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 사실 단순 피로 누적이라 아마 내일까지 푹 쉬고 바로 퇴원할 것 같아..");
+        t = "h425";
+    }
+
+    public void hospital425(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 그렇구나. 그럼 일도 바로 하게 되는거야??");
+        t = "h426";
+    }
+
+    public void hospital426() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 아니, 일은 한 일주일 쉬게 해주셨지. 다행이야ㅎㅎ");
+        t = "h427";
+    }
+
+    public void hospital427(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 아 정말? 그건 그래도 다행이네..");
+        t = "h428";
+    }
+
+    public void hospital428() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 다음 주에 내 생일이기도 하고 오랜만에 좀 쉬려구ㅎㅎ");
+        t = "h4s6";
+    }
+
+    public void hospital4select6() {
+        h1.character.setVisibility((View.INVISIBLE));
+        showButton();
+        h1.text.setVisibility(View.INVISIBLE);
+        h1.choice1.setVisibility(View.INVISIBLE);
+        h1.choice2.setText("주인공: 헐! 다음 주가 생일이구나?? 생일 때 같이 놀자!!");
+        h1.choice3.setText("주인공: 오.. 그렇구나. 생일이 무슨 요일이야?");
+        h1.choice4.setText("주인공: 아, 쉬는 동안 뭐하게?");
+        c2 = "h429a";
+        c3 = "h429b";
+        c4 = "h429c";
+    }
+
+    public void hospital429a() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 아.. 근데 그 날 친구들이랑 가족들이랑 같이 보낼 수도 있어서 아직은 잘 모르겠다ㅜㅜ");
+        t = "h430a";
+    }
+
+    public void hospital430a(){
+        h1.character.setVisibility(View.INVISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("주인공 : 아 그래..? 내가 너무 성급했네..ㅎㅎ");
+        t = "h431a";
+    }
+
+    public void hospital421a() {
+        h1.character.setVisibility(View.VISIBLE);
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 아.. 근데 그 날 친구들이랑 가족들이랑 같이 보낼 수도 있어서 아직은 잘 모르겠다ㅜㅜ");
+        t = "h430a";
+    }
+
+    public void hospital422b() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 음.. 그런가? 난 특별하다고 생각했는데..");
+        t = "h423";
+    }
+
+    public void hospital422c() {
+        h1.character.setVisibility(View.VISIBLE);
+        noButton();
+        h1.text.setVisibility(View.VISIBLE);
+        h1.text.setText("바닐라: 아... 응... 그래야지..?");
+        t = "h423";
+    }
+
 }
 
