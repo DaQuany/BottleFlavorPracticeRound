@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,8 +20,6 @@ import java.util.ArrayList;
 public class Hospital1 extends AppCompatActivity {
 
     private DatabaseHelper db;
-    private ArrayList<Hart> hartItem;
-    private RecyclerView tv_hart;
     private Button savebt;
     static TextView savenumber;
 
@@ -30,6 +29,7 @@ public class Hospital1 extends AppCompatActivity {
     Button choice1, choice2, choice3, choice4;
     Button home;
 
+    TextView go_hart, ga_hart, ba_hart;
 
     String scene200;
 
@@ -51,14 +51,21 @@ public class Hospital1 extends AppCompatActivity {
         savebt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //scene 위치
                 savenumber.getText().toString();
                 saveData();
+
+                //여자들 호감도
+                String gorila = go_hart.getText().toString();
+                String gaerila = ga_hart.getText().toString();
+                String banila = ba_hart.getText().toString();
+                db.insertGirl(go_hart.getText().toString(), ga_hart.getText().toString(), ba_hart.getText().toString());
             }
         });
 
         if(getIntent().hasExtra("msg")){
 //            go_hart.setText("0");
-//            ge_hart.setText("0");
+//            ga_hart.setText("0");
 //            ba_hart.setText("0");
             savenumber.setText("0");
         }
@@ -80,14 +87,14 @@ public class Hospital1 extends AppCompatActivity {
 
     private void aboutSave() {
         db = new DatabaseHelper(this);
-
-        hartItem = new ArrayList<>();
+        ba_hart = (TextView)findViewById(R.id.tv_banila);
+        ga_hart = (TextView)findViewById(R.id.tv_gaerila);
+        go_hart = (TextView)findViewById(R.id.tv_gorila);
 
         // 세이브 버튼
         savebt = (Button) findViewById(R.id.savebt);
         // 세이브 했을 때 신 넘버
         savenumber = (TextView) findViewById(R.id.savenumber);
-
     }
 
     public void aboutGame(){

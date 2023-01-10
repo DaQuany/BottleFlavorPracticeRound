@@ -59,15 +59,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     //insert
-    public void insertGirl(String _go_hart, String _ge_hart, String _ba_hart, String scene){
+    public void insertGirl(String _go_hart, String _ge_hart, String _ba_hart){
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("INSERT INTO girlList(go_hart, ge_hart, ba_hart, scene) VALUES('" + _go_hart + "', '" + _ge_hart + "', '" + _ba_hart + "','" + scene + "'); ");
+        db.execSQL("INSERT INTO girlList(go_hart, ge_hart, ba_hart) VALUES('" + _go_hart + "', '" + _ge_hart + "', '" + _ba_hart + "'); ");
     }
 
     //update
-    public void updateGirl(String _go_hart, String _ge_hart, String _ba_hart, String _scene, int _id){
+    public void updateGirl(String _go_hart, String _ge_hart, String _ba_hart, int _id){
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("UPDATE girlList SET go_hart = '"+ _go_hart+"', ge_hart = '"+ _ge_hart+"', ba_hart = '"+ _ba_hart+"', scene = '"+ _scene+"', WHERE id = '"+ _id+"' ");
+        db.execSQL("UPDATE girlList SET go_hart = '"+ _go_hart+"', ge_hart = '"+ _ge_hart+"', ba_hart = '"+ _ba_hart+"', WHERE id = '"+ _id+"' ");
     }
 
     //delete
