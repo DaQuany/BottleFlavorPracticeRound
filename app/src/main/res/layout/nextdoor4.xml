@@ -22,7 +22,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="100dp"
-        android:src="@mipmap/nextdoorbaseball1"
+        android:src="@mipmap/nextdoorbaseball3"
         app:layout_constraintBottom_toBottomOf="@+id/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,14 +111,6 @@
                     android:text="choice3"
                     android:onClick="choice3"/>
 
-                <Button
-                    android:id="@+id/choice4"
-                    android:layout_width="match_parent"
-                    android:layout_height="49dp"
-                    android:layout_margin="5dp"
-                    android:background="@drawable/round_shape"
-                    android:text="choice4"
-                    android:onClick="choice4"/>
             </LinearLayout>
 
         </RelativeLayout>

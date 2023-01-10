@@ -92,12 +92,14 @@ public class NextDoor4Story
     }
 
     public void showButton(){
+        nds4.text.setVisibility(View.INVISIBLE);
         for (Button button : Arrays.asList(nds4.choice1, nds4.choice2, nds4.choice3)) {
             button.setVisibility(View.VISIBLE);
         }
     }
 
     public void noButton(){
+        nds4.text.setVisibility(View.VISIBLE);
         for (Button button : Arrays.asList(nds4.choice1, nds4.choice2, nds4.choice3)) {
             button.setVisibility(View.INVISIBLE);
         }
@@ -115,8 +117,6 @@ public class NextDoor4Story
     }
 
     public void text1(){
-        nds4.background.setImageResource(R.mipmap.cloud);
-        nds4.character.setVisibility(View.INVISIBLE);
         nds4.text.setText("주인공: 흐흐흐... 역시... 이몸이야... 내가 안해서 그렇지 마음먹고 하니까 여자가 먼저 놀러 가자 말하는 클라스... 캬~~ 취한다 취해~");
         t = "nd4-2";
     }
@@ -132,13 +132,11 @@ public class NextDoor4Story
     }
 
     public void text4(){
-        showButton();
         nds4.choice1.setText("그래 지금 자고 내일 일어나서 야구장에 갈 준비를 하자.");
         nds4.choice2.setText("11시에 자는 건 너무 이르지, 한 30분만 \"아웃스타그램\"을 보다가 자야겠다.(호감도+5)");
-        if(nds4.choice1.callOnClick())
-            t = "nd4-5";
-        else
-            t = "nd4-13";
+        showButton();
+        c1 = "nd4-5";
+        c2 = "nd4-13";
     }
 
     public void text5(){
@@ -179,30 +177,23 @@ public class NextDoor4Story
 
     public void text12(){
         nds4.text.setText("주인공: 오, 여기 좋은데? 내일 한번 기회가 되면 여기 가봐야 겠다. 그럼 이제 시간도 늦었는데 자야겠다.");
-        t = "nd4-13";
+        t = "nd4-14";
     }
 
     public void text13(){
         noButton();
         nds4.text.setText("주인공: 으... 에이, 뭐 데이트가 뭐 대수라고... 긴장되서 잠도 못잤네. 일단 일어나서 나갈 준비 해야 겠다. 오늘 갈때 어떻게 하고 갈까?");
-        t = "14";
+        t = "nd4-14";
     }
 
     public void text14(){
         showButton();
         nds4.choice1.setText("모자를 쓰고 가야겠다. (호감도+5)");
         nds4.choice2.setText("왁스를 바르고 가야 겠다. (호감도-5)");
-        if(nds4.choice1.callOnClick())
-        {
-
-            t = "nd4-15";
+        c1 = "nd4-15";
             //호감도 +5
-        }
-        else
-        {
-            t = "nd4-19";
+        c2 = "nd4-19";
             //호감도-5
-        }
     }
 
     public void text15(){
@@ -217,7 +208,7 @@ public class NextDoor4Story
     }
 
     public void text17(){
-        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.character.setVisibility(View.VISIBLE);
         nds4.text.setText("고릴라: 오! 뭐야, \"정모\" 일찍나왔네.");
         t = "nd4-18";
     }
@@ -225,12 +216,11 @@ public class NextDoor4Story
     public void text18(){
         nds4.character.setVisibility(View.INVISIBLE);
         nds4.text.setText("주인공: 나도 방금 나왔어.");
-        t = "nd4-19";
+        t = "nd4-29";
     }
 
     public void text19(){
         noButton();
-        nds4.character.setVisibility(View.INVISIBLE);
         nds4.text.setText("주인공: 어디보자... 왁스가 어디 있더라...  앗 여기있다. 왁스도 저번에 사놓고 한번도 사용안해봤지만, 뭐 잘 되겠지.");
         t = "nd4-20";
     }
@@ -256,6 +246,7 @@ public class NextDoor4Story
     }
 
     public void text24(){
+        nds4.background.setImageResource(R.mipmap.baseballstadium1);
         nds4.text.setText("주인공: 미얀. \"고릴라\"내가 조금 늦었지?");
         t = "nd4-25";
     }
@@ -344,26 +335,20 @@ public class NextDoor4Story
         t = "nd4-39";
     }
     public void text39(){
+        nds4.choice1.setText("그런데 너는 왜 꼴찌하는 팀을 좋아하는거야?");
+        nds4.choice2.setText("그래도 오늘 \"하놔 피죤스\"가 이길 수도 있지.");
+        nds4.choice3.setText("그래도 꼴찌니까 더이상 떨어질때가 없으니 괜찮지 않을까? 뭐, 맘편하게 경기 하면 되잖아.");
         showButton();
-        nds4.choice1.setText("그런데 너는 왜 꼴찌하는 팀을 좋아하는거야?(호감도+10)\n");
-        nds4.choice2.setText("그래도 오늘 \"하놔 피죤스\"가 이길 수도 있지.(호감도+5)");
-        nds4.choice3.setText("그래도 꼴찌니까 더이상 떨어질때가 없으니 괜찮지 않을까? 뭐, 맘편하게 경기 하면 되잖아.(호감도-5)");
-        if(nds4.choice1.isPressed()){
-            t = "nd4-40";
+        c1 = "nd4-40";
             //호감도 +10
-        }
-        else if(nds4.choice2.isPressed()){
-            t = "nd4-55";
+        c2 = "nd4-55";
             //호감도 +5
-        }
-        else{
-            t = "nd4-57";
+        c3 = "nd4-57";
             //호감도 -5
-        }
-
     }
 
     public void text40(){
+        noButton();
         nds4.character.setVisibility(View.VISIBLE);
         nds4.text.setText("고릴라: 그러면 너는 왜 좋아하는데?");
         t = "nd4-41";
@@ -454,6 +439,7 @@ public class NextDoor4Story
     }
 
     public void text55(){//선택지 2
+        noButton();
         nds4.character.setVisibility(View.VISIBLE);
         nds4.text.setText("고릴라: 맞아. 오늘 이길 수도 있지!");
         t = "nd4-56";
@@ -466,6 +452,7 @@ public class NextDoor4Story
     }
 
     public void text57(){//선택지 3
+        noButton();
         nds4.character.setVisibility(View.VISIBLE);
         nds4.text.setText("고릴라: 뭐야, 너 진심으로 하는 말이야?");
         t = "nd4-58";
@@ -544,7 +531,7 @@ public class NextDoor4Story
     public void text70(){
         nds4.character.setVisibility(View.INVISIBLE);
         nds4.text.setText("주인공: 이 근처에 유명한 카페가 있다는데 거기갈까?");
-        t = "71";
+        t = "nd4-71";
     }
 
     public void text71(){
@@ -575,7 +562,289 @@ public class NextDoor4Story
         nds4.choice1.setText("초콜릿 스무디는 어떄?");
         nds4.choice2.setText("오곡라떼는 어떄?(호감도+5)");
         nds4.choice3.setText("자몽 에이드는 어떄?");
-        c1 = "nd4-76";
+        c1 = c3 = "nd4-76";
         c2 = "nd4-77";
+    }
+
+    public void text76(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 그래? 그러면 나는 그나마 건강한 오곡라떼를 먹어야 겠다.");
+        t = "nd4-78";
+    }
+
+    public void text77(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 뭐야? 너도 오곡라떼 좋아해? 나도 좋아하는데!");
+        t = "nd4-78";
+    }
+
+    public void text78(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 좋아, 그러면 가서 앉아 있어. 내가 가서 주문하고 올게.");
+        t = "nd4-79";
+    }
+
+    public void text79(){
+        nds4.text.setText("나레이션: \"주인공\"은 카페에서 음료를 주문하고 가지고 왔다.");
+        t = "nd4-80";
+    }
+
+    public void text80(){
+        nds4.text.setText("주인공: 자, 여기 음료수 가져왔어.");
+        t = "nd4-81";
+    }
+
+    public void text81(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 오, 고마워.");
+        t = "nd4-82";
+    }
+
+    public void text82(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그런데 나 궁금한게 있는데?");
+        t = "nd4-83";
+    }
+
+    public void text83(){
+        nds4.text.setText("고릴라: 뭔데?");
+        t = "nd4-84";
+    }
+
+    public void text84(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 오늘 왜 나랑 같이 야구장에 가자고 한거야?");
+        t = "nd4-85";
+    }
+
+    public void text85(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 왜 일꺼 같아?");
+        t = "nd4-86";
+    }
+
+    public void text86(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그건...");
+        t = "nd4-87";
+    }
+
+    public void text87(){
+        showButton();
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.choice1.setText("혹시 나한테 관심 있는거야?");
+        nds4.choice2.setText("내가 시간이 많아 보여서?");
+        nds4.choice3.setText("내가 운동을 좋아하는것 처럼 보여서?");
+        c1 = "nd4-88";
+        c2 = "nd4-96";
+        c3 = "nd4-101";
+    }
+
+    public void text88(){
+        noButton();
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 뭐라는거야, 내가 너한테 왜 관심을 가지냐?");
+        t = "nd4-89";
+    }
+
+    public void text89(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 물론, 내가 매력적이라서?");
+        t = "nd4-90";
+    }
+
+    public void text90(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 푸하하! 너가 매력적이라고? 요근래 들었던 농담 중에서 가장 웃긴 말이였다. 그러면 너가 생각하는 너의 매력이 뭔데?");
+        t = "nd4-91";
+    }
+
+    public void text91(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 나의 매력이라... 그건...");
+        t = "nd4-92";
+    }
+
+    public void text92(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 그건?");
+        t = "nd4-93";
+    }
+
+    public void text93(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: ... ... ...");
+        t = "nd4-94";
+    }
+
+    public void text94(){
+        nds4.text.setText("주인공: \"하놔 피죤스\"를 좋아하는거?");
+        t = "nd4-95";
+    }
+
+    public void text95(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 하하하, 기껏 생각해 낸 매력이 너가 \"하놔 피죤스\"를 좋아한다는 거야? 진짜 웃기다, 너!");
+        t = "nd4-104";
+    }
+
+    public void text96(){//선택 2
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 확실히 그것도 맞긴 하지. 그나저나 너는 요즘 뭐하면서 지내냐? 계속 집에 있던것 같은데.");
+        t = "nd4-97";
+    }
+
+    public void text97(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 나? 나는 군대 제대하고 지금은 그냥 쉬고 있어.");
+        t = "nd4-98";
+    }
+
+    public void text98(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 그렇군. 그래서 계속 집에만 있어서 소음을 만들어 내는 거구만");
+        t = "nd4-99";
+    }
+
+    public void text99(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 앗, 그거는... 내가 앞으로 조심할게.");
+        t = "nd4-100";
+    }
+
+    public void text100(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 하하, 장난이야! 물론, 조심해주면 나야 좋지만.");
+        t = "nd4-104";
+    }
+
+    public void text101(){//선택 3
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 너 살도 빠지고, 운동도 열심히 하고 요즘 너 다시 보인다.");
+        t = "nd4-102";
+    }
+
+    public void text102(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 뭐야, 설마 나한테 반해버린거야? 야레~ 야레~~ 그러면 곤란 하다구~~");
+        t = "nd4-103";
+    }
+
+    public void text103(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 하하, 성격은 그대로네 ");
+        t = "nd4-104";
+    }
+
+    public void text104(){//스토리 다시 진행
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그나저나, 너 무슨 걱정 있어?");
+        t = "nd4-105";
+    }
+
+    public void text105(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 어? 왜? 너는 내가 고민이 있어 보여?");
+        t = "nd4-106";
+    }
+
+    public void text106(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 음, 오늘 경기 보는데 뭐랄까... 완전히 경기에 집중하지 못하는것 처럼 보이기는 하더라고.");
+        t = "nd4-107";
+    }
+
+    public void text107(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 흠... 사실, 이제 며칠 뒤면 내가 복싱 시합이 있거든.");
+        t = "nd4-108";
+    }
+
+    public void text108(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 아 진짜?");
+        t = "nd4-109";
+    }
+    public void text109(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 응...");
+        t = "nd4-110";
+    }
+
+    public void text110(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그래서 긴장하고 있는 거구나.");
+        t = "nd4-111";
+    }
+
+    public void text111(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 맞아, 그것때문에 계속 긴장이 되고 그렇네.");
+        t = "nd4-112";
+    }
+
+    public void text112(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그래도 걱정하지마.");
+        t = "nd4-113";
+    }
+
+    public void text113(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 뭐야, \"정모\" , 너 주제에 위로해주는 거야?");
+        t = "nd4-114";
+    }
+
+    public void text114(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그야 그동안 많이 노력 했을 거잖아. 노력한 만큼 결실을 이루어 낼 거라고.");
+        t = "nd4-115";
+    }
+
+    public void text115(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그러니 너무 걱정하지 말고, 지금껏 너가 한 노력을 믿으라고!");
+        t = "nd4-116";
+    }
+
+    public void text116(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 그래, 고맙다. 덕분에 조금 나아진것 같아. ");
+        t = "nd4-117";
+    }
+
+    public void text117(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 혹시 괜찮으면, 내가 너 복싱하는 날 가서 응원해도 괜찮아?");
+        t = "nd4-118";
+    }
+
+    public void text118(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 어?... 응원 이라고?");
+        t = "nd4-119";
+    }
+
+    public void text119(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그래, 응원. 혹시 모르자나. 내가 응원가면 오늘\"하놔 피죤스\" 처럼 승리할 수도.");
+        t = "nd4-120";
+    }
+
+    public void text120(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 흠, 확실히 그럴 수도 있겠네");
+        t = "nd4-121";
+    }
+
+    public void text121(){
+        nds4.character.setVisibility(View.INVISIBLE);
+        nds4.text.setText("주인공: 그러면 나 응원하러 가도 되?");
+        t = "nd4-122";
+    }
+
+    public void text122(){
+        nds4.character.setVisibility(View.VISIBLE);
+        nds4.text.setText("고릴라: 그래, 그날 시간 되면 한번 와봐.");
     }
 }

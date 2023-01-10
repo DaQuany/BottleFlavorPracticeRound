@@ -31,14 +31,14 @@ public class IntroGod extends AppCompatActivity {
         findViewById(R.id.startgame).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(IntroGod.this, Hospital1.class));
+                startActivity(new Intent(IntroGod.this, NextDoor4.class));
             }
         });
 
         findViewById(R.id.skip).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(IntroGod.this, Hospital1.class));
+                startActivity(new Intent(IntroGod.this, NextDoor4.class));
             }
         });
     }
