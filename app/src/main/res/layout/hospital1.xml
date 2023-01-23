@@ -8,18 +8,6 @@
     >
 
 
-
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="120dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/hospitalbed" />
-
     <ImageView
         android:id="@+id/character"
         android:layout_width="0dp"
@@ -38,7 +26,8 @@
         android:layout_marginEnd="10dp"
         android:text="SAVE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/background" />
+        app:layout_constraintTop_toTopOf="@+id/background"
+        />
 
     <TextView
         android:id="@+id/savenumber"
@@ -64,6 +53,13 @@
             android:id="@+id/empty"
             android:layout_width="match_parent"
             android:layout_height="500dp" />
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="120dp"
+            app:srcCompat="@mipmap/hospitalbed" />
 
     </LinearLayout>
 
@@ -121,8 +117,8 @@
                     android:layout_height="49dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/round_shape"
-                    android:text="choice2"
-                    android:onClick="choice2"/>
+                    android:onClick="choice2"
+                    android:text="choice2" />
 
                 <Button
                     android:id="@+id/choice3"
@@ -130,8 +126,8 @@
                     android:layout_height="49dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/round_shape"
-                    android:text="choice3"
-                    android:onClick="choice3"/>
+                    android:onClick="choice3"
+                    android:text="choice3" />
 
                 <Button
                     android:id="@+id/choice4"
@@ -139,8 +135,8 @@
                     android:layout_height="49dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/round_shape"
-                    android:text="choice4"
-                    android:onClick="choice4"/>
+                    android:onClick="choice4"
+                    android:text="choice4" />
             </LinearLayout>
 
         </RelativeLayout>

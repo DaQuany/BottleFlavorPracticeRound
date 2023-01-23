@@ -6,56 +6,92 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="goSave"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@mipmap/backgroundblue"
+    android:fontFamily="@font/cute"
+
+    >
+
+    <ImageView
+        android:layout_width="189dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="0dp"
+        android:src="@mipmap/airplane"
+        android:layout_marginLeft="220dp"
+        />
 
     <Button
         android:id="@+id/general"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         android:onClick="goSave"
-        android:text="General" />
+        android:text="General"
+        android:background="@drawable/buttonshape"
+        android:textSize="15sp"/>
 
-    <Button
+<!--    <Button-->
         android:id="@+id/button1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:text="Sound" />
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="10dp"/>
 
     <Button
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Sound"
+        android:background="@drawable/buttonshape"
+        android:textSize="15sp"/>
+
+<!--    <Button-->
         android:id="@+id/button2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:text="Vibration" />
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="10dp"/>
 
     <Button
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Vibration"
+        android:background="@drawable/buttonshape"
+        android:textSize="15sp"
+        />
+
+<!--    <Button-->
         android:id="@+id/button3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="10dp"/>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:radius="200dp"
-        android:text="back" />
+        android:text="back"
+        android:background="@drawable/buttonshape"
+        android:textSize="14sp"
+       />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:src="@mipmap/heart1"
+
+        />
+
 
 </LinearLayout>

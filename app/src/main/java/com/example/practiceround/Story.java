@@ -400,7 +400,7 @@ public class Story {
 
     public void school41() {
         h1.background.setImageResource(R.mipmap.classroom);
-        h1.character.setImageResource(R.mipmap.Teacher);
+        h1.character.setImageResource(R.mipmap.teacher);
         h1.character.setVisibility(View.VISIBLE);
         noButton();
         h1.text.setVisibility(View.VISIBLE);
@@ -471,7 +471,7 @@ public class Story {
 
     }    public void school410() {
         h1.background.setImageResource(R.mipmap.classroom);
-        h1.character.setImageResource(R.mipmap.Teacher);
+        h1.character.setImageResource(R.mipmap.teacher);
         h1.character.setVisibility(View.VISIBLE);
         noButton();
         h1.text.setVisibility(View.VISIBLE);
@@ -489,7 +489,7 @@ public class Story {
 
     }    public void school412() {
         h1.background.setImageResource(R.mipmap.classroom);
-        h1.character.setImageResource(R.mipmap.Teacher);
+        h1.character.setImageResource(R.mipmap.teacher);
         h1.character.setVisibility(View.VISIBLE);
         noButton();
         h1.text.setVisibility(View.VISIBLE);
@@ -521,7 +521,7 @@ public class Story {
 
     }    public void school416() {
         h1.background.setImageResource(R.mipmap.classroom);
-        h1.character.setImageResource(R.mipmap.Teacher);
+        h1.character.setImageResource(R.mipmap.teacher);
         h1.character.setVisibility(View.VISIBLE);
         noButton();
         h1.text.setVisibility(View.VISIBLE);
@@ -541,7 +541,7 @@ public class Story {
     }
     public void school418() {
         h1.background.setImageResource(R.mipmap.classroom);
-        h1.character.setImageResource(R.mipmap.Teacher);
+        h1.character.setImageResource(R.mipmap.teacher);
         h1.character.setVisibility(View.VISIBLE);
         noButton();
         h1.text.setVisibility(View.VISIBLE);
@@ -561,7 +561,7 @@ public class Story {
     }
     public void school420() {
         h1.background.setImageResource(R.mipmap.classroom);
-        h1.character.setImageResource(R.mipmap.Teacher);
+        h1.character.setImageResource(R.mipmap.teacher);
         h1.character.setVisibility(View.VISIBLE);
         noButton();
         h1.text.setVisibility(View.VISIBLE);
