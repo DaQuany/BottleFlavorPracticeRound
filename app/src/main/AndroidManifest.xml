@@ -30,7 +30,9 @@
         <activity android:name=".Hospital1" />
         <activity android:name=".Information1" />
         <activity android:name=".How_to_play" />
-        <activity android:name=".Hospital2" />
+        <activity android:name=".NextDoor4" />
+        <activity android:name=".NextDoor4Story" />
+        <activity android:name=".StoryGod" />
     </application>
 
 </manifest>
